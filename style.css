@@ -1,0 +1,63 @@
+body {
+    background-color: #1a1b16; /* Tmavé pozadí okolo boxu */
+    color: #d4c391;           /* Text v barvě pergamenu */
+    font-family: 'Courier New', monospace;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #2d5a4c; /* TVOJE ZELENÁ BARVA */
+    border: 3px solid #d4c391;
+    box-shadow: 10px 10px 0px #000;
+}
+
+.header-banner {
+    border-bottom: 3px solid #d4c391;
+    line-height: 0;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.main-layout {
+    display: flex;
+}
+
+.content {
+    flex: 3;
+    padding: 20px;
+    border-right: 3px solid #d4c391;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 10px;
+}
+
+.sidebar-title {
+    background: #d4c391;
+    color: #2d5a4c;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+}
+
+.profile-pic {
+    width: 150px;
+    border: 2px solid #d4c391;
+    image-rendering: pixelated; /* Pro ten dithered look */
+}
+
+.pixel-line {
+    border: none;
+    border-top: 2px dashed #d4c391;
+}
+
+.stamps-grid img {
+    margin: 2px;
+}
