@@ -2,53 +2,64 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xyz | absurdity & history</title>
+    <title>xyz | history</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <header class="header-banner">
-        <a href="/">
-            <img src="banner.png" alt="xyz logo" class="banner-img">
-        </a>
-    </header>
+<div class="main-container">
+    <header class="top-banner">
+    <img src="logo.png" alt="xyz banner" class="banner-img">
+</header>
 
-    <div class="main-layout">
-        <main class="content">
-            <h2>Welcome to the Void</h2>
-            <hr class="pixel-line">
+    <div class="layout">
+        <div class="left-column">
             
-            <div class="profile-grid">
-                <img src="profile.png" alt="me" class="profile-pic">
-                <div class="bio">
-                    <p>„Vprostřed zimy jsem v sobě konečně našel nepřemožitelné léto.“ — Camus</p>
-                    <ul class="stats">
-                        <li><strong>Jméno:</strong> xyz</li>
-                        <li><strong>Zájmy:</strong> Historie, Filozofie, Šachy</li>
-                        <li><strong>Hry:</strong> KCD, HoI4, Wolfenstein</li>
-                    </ul>
+            <section class="box">
+                <div class="box-header">welcome to my website!</div>
+                <div class="box-content welcome-area">
+                    <img src="profile.png" class="profile-img" alt="me">
+                    <div class="welcome-text">
+                        <p>mé jméno je xyz.</p>
+                        <p>tato stránka je v raném vývoji</p>
+                        </div>
                 </div>
-            </div>
+                <div class="user-info">
+                    <div class="info-row"><span>jméno:</span> <span>xyz</span></div>
+                    <div class="info-row"><span>zájmy:</span> <span>historie, knihy</span></div>
+                    <div class="info-row"><span>hudba:</span> <span>Rammstein, klasika</span></div>
+                </div>
+            </section>
 
-            <div class="stamps-section">
-                <h3>Kolekce</h3>
-                <div class="stamps-grid">
-                    <img src="neocities.gif" alt="badge">
-                </div>
-            </div>
-        </main>
+            <section class="box">
+                <div class="box-header">my artifacts</div>
+                <div class="box-content stamps-grid">
+                    <img src="neocities.gif">
+                    <img src="linux.gif">
+                    </div>
+            </section>
+
+        </div>
 
         <aside class="sidebar">
-            <div class="sidebar-box">
-                <div class="sidebar-title">Navigace</div>
-                <nav>
-                    <a href="#">Domů</a>
-                    <a href="#">Knihovna</a>
-                    <a href="#">Historie</a>
+            
+            <div class="side-box">
+                <div class="side-header">navigation</div>
+                <nav class="side-nav">
+                    <a href="index.html">x home x</a>
+                    <a href="#">x library x</a>
+                    <a href="#">x war room x</a>
+                    <a href="#">x chess x</a>
                 </nav>
             </div>
+
+            <div class="side-box">
+                <div class="side-header">kontejner</div>
+                <div class="side-content" style="text-align:center;">
+                    <p>možná tu něco bude</p>
+                    </div>
+            </div>
+
         </aside>
     </div>
 </div>

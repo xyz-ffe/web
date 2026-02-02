@@ -1,9 +1,9 @@
 /* TVOJE BAREVNÁ PALETA */
 :root {
-    --bg-color: #1a1b16;      /* Pozadí stránky */
-    --container-bg: #2d5a4c;  /* TVOJE ZELENÁ */
-    --text-color: #d4c391;    /* Pergamenový text */
-    --accent: #e07a5f;        /* Rezavá pro detaily */
+    --bg-color: #000000;      /* Pozadí stránky */
+    --container-bg: #0a0f0d;  /* TVOJE ZELENÁ */
+    --text-color: #ffffff;    /* Pergamenový text */
+    --accent: #f0cd06;        /* Rezavá pro detaily */
     --box-bg: #000000;        /* Černé vnitřky boxů */
 }
 
@@ -24,16 +24,17 @@ body {
 
 /* BANNER */
 .top-banner {
-    padding: 30px;
-    text-align: center;
-    border-bottom: 1px solid var(--text-color);
-    background-image: url('banner_bg.png'); /* Pokud máš ditherované pozadí */
+    padding: 0;             /* Odstraní vnitřní okraje kolem banneru */
+    text-align: center;      /* Vystředí obrázek */
+    line-height: 0;         /* Zabrání vzniku malé mezery pod obrázkem */
+    border-bottom: 1px solid var(--text-color); /* Drží linku pod bannerem */
 }
 
-.top-banner h1 {
-    font-size: 3rem;
-    margin: 0;
-    letter-spacing: 5px;
+.banner-img {
+    max-width: 100%;        /* Aby banner nebyl širší než web na mobilu */
+    height: auto;           /* Zachová poměr stran */
+    display: block;         /* Pomáhá s lepším zarovnáním */
+    margin: 0 auto;         /* Centrování */
 }
 
 /* ROZVRŽENÍ SLOUPCŮ */
