@@ -1,63 +1,112 @@
+/* TVOJE BAREVNÁ PALETA */
+:root {
+    --bg-color: #1a1b16;      /* Pozadí stránky */
+    --container-bg: #2d5a4c;  /* TVOJE ZELENÁ */
+    --text-color: #d4c391;    /* Pergamenový text */
+    --accent: #e07a5f;        /* Rezavá pro detaily */
+    --box-bg: #000000;        /* Černé vnitřky boxů */
+}
+
 body {
-    background-color: #1a1b16; /* Tmavé pozadí okolo boxu */
-    color: #d4c391;           /* Text v barvě pergamenu */
-    font-family: 'Courier New', monospace;
-    padding: 40px 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Courier New", monospace;
     margin: 0;
-}
-
-.container {
-    max-width: 850px;
-    margin: 0 auto;
-    background-color: #2d5a4c; /* TVOJE ZELENÁ BARVA */
-    border: 3px solid #d4c391;
-    box-shadow: 10px 10px 0px #000;
-}
-
-.header-banner {
-    border-bottom: 3px solid #d4c391;
-    line-height: 0;
-}
-
-.banner-img {
-    width: 100%;
-    height: auto;
-}
-
-.main-layout {
-    display: flex;
-}
-
-.content {
-    flex: 3;
     padding: 20px;
-    border-right: 3px solid #d4c391;
 }
 
-.sidebar {
-    flex: 1;
-    padding: 10px;
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--container-bg);
+    border: 1px solid var(--text-color);
 }
 
-.sidebar-title {
-    background: #d4c391;
-    color: #2d5a4c;
-    font-weight: bold;
+/* BANNER */
+.top-banner {
+    padding: 30px;
     text-align: center;
-    padding: 2px;
+    border-bottom: 1px solid var(--text-color);
+    background-image: url('banner_bg.png'); /* Pokud máš ditherované pozadí */
 }
 
-.profile-pic {
+.top-banner h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+/* ROZVRŽENÍ SLOUPCŮ */
+.layout {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.left-column { flex: 3; }
+.sidebar { flex: 1; }
+
+/* STYL BOXŮ */
+.box, .side-box {
+    border: 1px solid var(--text-color);
+    margin-bottom: 15px;
+    background-color: var(--box-bg);
+}
+
+.box-header, .side-header {
+    background-color: var(--text-color);
+    color: #000;
+    font-weight: bold;
+    padding: 3px 10px;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.box-content { padding: 15px; }
+
+/* PROFIL A INFO */
+.welcome-area {
+    display: flex;
+    gap: 15px;
+}
+
+.profile-img {
     width: 150px;
-    border: 2px solid #d4c391;
-    image-rendering: pixelated; /* Pro ten dithered look */
+    border: 1px solid var(--text-color);
+    image-rendering: pixelated;
 }
 
-.pixel-line {
-    border: none;
-    border-top: 2px dashed #d4c391;
+.user-info {
+    padding: 10px 15px;
+    border-top: 1px dashed var(--text-color);
 }
 
-.stamps-grid img {
-    margin: 2px;
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted var(--text-color); /* TEČKOVANÁ ČÁRA */
+    padding: 4px 0;
+}
+
+/* NAVIGACE */
+.side-nav a {
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px dotted var(--text-color);
+}
+
+.side-nav a:hover {
+    background-color: var(--text-color);
+    color: #000;
+}
+
+/* MŘÍŽKA NA GIFy */
+.stamps-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
 }
